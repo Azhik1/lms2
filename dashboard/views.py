@@ -267,7 +267,7 @@ def leave_creation(request):
 				send_mail(
                 'New leave request',
                 f"There is a new leave request visit the system to view",
-                'azariakilasi98@gmail.com',
+                'uccdodoma@gmail.com',
                 ['rajabtawfiq59@gmail.com'],
                 fail_silently=False,
             	)
@@ -353,7 +353,7 @@ def approve_leave(request,id):
 	send_mail(
                 'Leave Application Approved',
                 f"Dear {user.username},\n\nYour leave application is approved.",
-                'azariakilasi98@gmail.com',
+                'uccdodoma98@gmail.com',
                 [user.email],
                 fail_silently=False,
             )
@@ -379,7 +379,7 @@ def unapprove_leave(request,id):
 	send_mail(
                 'Leave Application Approved',
                 f"Dear {user.username},\n\nYour leave application is unapproved.",
-                'azariakilasi98@gmail.com',
+                'uccdodoma98@gmail.com',
                 [user.email],
                 fail_silently=False,
             )
@@ -430,7 +430,7 @@ def reject_leave(request, id):
         send_mail(
             'Leave Application Rejected',
             f"Dear {user.username},\n\nYour leave application has been rejected.\n\nReason: {rejection_reason}",
-            'azariakilasi98@gmail.com',
+            'uccdodoma98@gmail.com',
             [user.email],
             fail_silently=False,
         )
