@@ -265,7 +265,7 @@ def leave_creation(request):
 			else:
 				instance.save()
 				send_mail(
-                'Leave Application Approved',
+                'New leave request',
                 f"There is a new leave request visit the system to view",
                 'azariakilasi98@gmail.com',
                 ['rajabtawfiq59@gmail.com'],
