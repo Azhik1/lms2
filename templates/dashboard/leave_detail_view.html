@@ -86,7 +86,10 @@
       {% if leave.leave_approved %}
       <a href="{% url 'dashboard:dashboard' %}" class="btn btn-info">Back to dashboard</a>
       {% else %}
+      {%if request.user.is_superuser%}
+      {%else%}
       <a href="{% url 'dashboard:userleavecancel' leave.id %}" class="btn btn-danger">CANCEL</a>
+      {%endif%}
       {%endif%}
       {% endif %}
       {% endif %}
